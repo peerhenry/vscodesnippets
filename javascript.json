@@ -1,0 +1,55 @@
+{
+/*
+	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+  "gulp": {
+    "prefix": "gulp",
+    "body": 
+    ["gulp.task('$1', function(){",
+    "	return gulp.src(['$2'])",
+    "	.pipe($3)",
+    "	.pipe(gulp.dest('$4'));",
+    "});"],
+    "description": "a gulp task"
+  },
+
+  "require": {
+    "prefix": "req",
+    "body": "var $1 = require('$1');",
+    "description": "a require statement"
+  },
+
+  "webpackconfig": {
+    "prefix": "wpc",
+    "body": [
+      "module.exports = {",
+      "  context: __dirname+'src',",
+      "  entry: './main',",
+      "  output: {",
+      "    path: __dirname + '/build',",
+      "    filename: 'bundle.js'",
+      "  },",
+      "  resolve: {",
+      "    extensions: ['', '.webpack.js', '.js']",
+      "  },",
+      "  module: {",
+      "    loaders:{}",
+      "  }",
+      "  externals: {}",
+      "}"
+    ],
+    "description": "A standard empty webpack config"
+  }
+
+}

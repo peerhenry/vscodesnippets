@@ -61,8 +61,8 @@
       "  }",
       "",
       "  externals: {",
-      "    //'React': 'react'",
-      "    //'ReactDOM': 'react-dom'",
+      "    //'react': 'React'",
+      "    //'react-dom': 'ReactDOM'",
       "    ",
       "  }",
       "}"
